@@ -1,0 +1,74 @@
+{
+    "name": "ᴀʟᴛʀᴏɴ x ᴜsᴇʀʙᴏᴛ",
+    "logo": "https://te.legra.ph/file/7abe179ff252aaabbf2a5.jpg",
+    "description": "ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴘʀᴇᴍɪᴜᴍ ᴍᴜsɪᴄ + sᴘᴀᴍ ᴜsᴇʀʙᴏᴛ ",
+    "keywords": ["telegram"],
+    "stack": "container",
+    "env": {
+        "SESSION": {
+            "description": "pyrogram v1.4 string session here",
+            "required": true
+        },
+        "SESSION2": {
+            "description": "pyrogram v1.4 string session here",
+            "required": false
+        },
+        "SESSION3": {
+            "description": "pyrogram v1.4 string session here",
+            "required": false
+        },
+        "SESSION4": {
+            "description": "pyrogram v1.4 string session here",
+            "required": false
+        },
+        "SESSION5": {
+            "description": "pyrogram v1.4 string session here",
+            "required": false
+        },
+        "SESSION6": {
+            "description": "pyrogram v1.4 string session here",
+            "required": false
+        },
+        "SESSION7": {
+            "description": "pyrogram v1.4 string session here",
+            "required": false
+        },
+        "SESSION8": {
+            "description": "pyrogram v1.4 string session here",
+            "required": false
+        },
+        "SESSION9": {
+            "description": "pyrogram v1.4 string session here",
+            "required": false
+        },
+        "SESSION10": {
+            "description": "pyrogram v1.4 string session here",
+            "required": false
+        },
+        "BOT_TOKEN": {
+            "description": "Fill Bot Token in this var get it from telegram @botfather",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "Fill Bot Username in this var without [@]",
+            "required": true
+        },                        
+        "API_ID": {
+            "description": "telegram api id here",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "Who have Access Your Account But Rearly Plugins there",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "telegram api hash here",
+            "required": true
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
