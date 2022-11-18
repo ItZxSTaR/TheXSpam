@@ -18,7 +18,7 @@ if os.path.exists("Internal"):
 API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
 SESSION = getenv("SESSION")
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/ItZxSTaR/AltronUserbot")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/ItZxSTaR/TheXSpam")
 
 def make_int(str_input):
     str_list = str_input.split(" ")
