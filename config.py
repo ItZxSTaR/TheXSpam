@@ -28,13 +28,13 @@ def make_int(str_input):
     int_list = []
     for x in str_list:
         int_list.append(int(x))
+    int_list.append(OWNER_ID)
     return int_list
   
 sudo = getenv("SUDO_USERS")
 SUDO_USERS = []
 if sudo:
     SUDO_USERS = make_int(sudo)
-SUDO_USERS.append(OWNER_ID)
 
 aiohttpsession = aiohttp.ClientSession()
 

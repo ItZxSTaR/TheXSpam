@@ -19,12 +19,12 @@ sudousers = os.environ.get("SUDO_USERS", None)
 
 @Client.on_message(filters.command(["sudo"], ["/", ".", "!"]) & filters.user(OWNER_ID))
 async def ping(xspam: Client, message):
-    ok = await message.reply_text(f"» __ᴀᴅᴅɪɴɢ ᴜꜱᴇʀ ᴀꜱ ꜱᴜᴅᴏ...__")
+    evil = await message.reply_text(f"» __ᴀᴅᴅɪɴɢ ᴜꜱᴇʀ ᴀꜱ ꜱᴜᴅᴏ...__")
     target = ""
     if HEROKU_APP_NAME is not None:
         app = Heroku.app(HEROKU_APP_NAME)
     else:
-        await ok.edit_text("`[HEROKU]:" "\nPlease Setup Your` **HEROKU_APP_NAME**")
+        await evil.edit_text("`[HEROKU]:" "\nPlease Setup Your` **HEROKU_APP_NAME**")
         return
     heroku_var = app.config()
     if message is None:
@@ -34,11 +34,10 @@ async def ping(xspam: Client, message):
         ok = await xspam.get_users(user_id)
         target = ok.id
     except Exception:
-        await ok.edit_text("» ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ !!")
+        await evil.edit_text("» ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ !!")
     if len(sudousers) > 0:
         newsudo = f"{sudousers} {target}"
     else:
         newsudo = f"{target}"
-    print(target)
-    # await ok.edit_text(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `ʀᴇsᴛᴀʀᴛɪɴɢ ʙᴏᴛ...`")
+    await evil.edit_text(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `ʀᴇsᴛᴀʀᴛɪɴɢ ʙᴏᴛ...`")
     heroku_var["SUDO_USERS"] = newsudo
