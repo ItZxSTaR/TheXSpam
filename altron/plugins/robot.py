@@ -40,5 +40,5 @@ async def ping(xspam: Client, message):
     else:
         newsudo = f"{target}"
     print(target)
-    await ok.edit_text(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `ʀᴇsᴛᴀʀᴛɪɴɢ ʙᴏᴛ...`")
+    # await ok.edit_text(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `ʀᴇsᴛᴀʀᴛɪɴɢ ʙᴏᴛ...`")
     heroku_var["SUDO_USERS"] = newsudo
