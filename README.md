@@ -15,15 +15,13 @@
 
 # Oᴡɴᴇʀ ᴀɴᴅ Dᴇᴠᴇʟᴏᴘᴇʀ 👨🏻‍💻
 
-
 - [Sʜᴀɪʟᴇɴᴅʀᴀ](https://github.com/Shailendra34)
+
 
 # Cʀᴇᴅɪᴛs ✌
 
-
-- [Sʜᴀɪʟᴇɴᴅʀᴀ](https://github.com/Shailendra34)
+- [Pʏᴛʜᴏɴ](https://github.com/ItZxSTaR)
 
 - [PʏTɢCᴀʟʟs](https://github.com/pytgcalls/pytgcalls)
 
 - [Pʏʀᴏɢʀᴀᴍ](https://github.com/pyrogram/pyrogram)
-
