@@ -56,6 +56,10 @@
         "API_HASH": {
             "description": "telegram api hash here",
             "required": true
+        },
+        "UPSTREAM_REPO": {
+            "description": "For updater",
+            "required": false
         }
     },
     "buildpacks": [
