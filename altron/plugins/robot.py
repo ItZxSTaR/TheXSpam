@@ -40,5 +40,5 @@ async def ping(xspam: Client, message):
     else:
         newsudo = f"{target}"
     await evil.edit_text(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `ʀᴇsᴛᴀʀᴛɪɴɢ ʙᴏᴛ...`")
-    if target not in sudousers:
+    if str(target) not in sudousers:
         heroku_var["SUDO_USERS"] = newsudo
