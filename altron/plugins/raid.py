@@ -32,7 +32,7 @@ async def dmraid(xspam: Client, e: Message):
       elif e.reply_to_message:
           user_id = e.reply_to_message.from_user.id
           ok = await xspam.get_users(user_id)
-          id = e.chat.id
+          id = ok.id
           if int(id) in VERIFIED_USERS:
                 text = f"`ᴠᴇʀɪғɪᴇᴅ ʙʏ ᴀʟᴛʀᴏɴ x`"
                 await e.reply_text(text)
@@ -45,7 +45,7 @@ async def dmraid(xspam: Client, e: Message):
               await omp.delete()
               for _ in range(counts):
                     reply = choice(RAID)
-                    msg = f"[{ok.first_name}](tg://user?id={ok.id}) {reply}"
+                    msg = f"[{ok.first_name}](tg://user?id={id}) {reply}"
                     await xspam.send_message(e.chat.id, msg)
                     await asyncio.sleep(0.1)
 

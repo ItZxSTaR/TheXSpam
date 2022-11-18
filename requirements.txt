@@ -10,3 +10,4 @@ requests
 TgCrypto
 wget
 youtube-search-python==1.4.6
+heroku3

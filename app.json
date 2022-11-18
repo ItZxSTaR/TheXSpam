@@ -49,9 +49,13 @@
             "description": "telegram api id here",
             "required": true
         },
+        "OWNER_ID": {
+            "description": "bot's owner id",
+            "required": true
+        },
         "SUDO_USERS": {
             "description": "Who have Access Your Account But Rearly Plugins there",
-            "required": true
+            "required": false
         },
         "API_HASH": {
             "description": "telegram api hash here",
@@ -59,6 +63,14 @@
         },
         "UPSTREAM_REPO": {
             "description": "For updater",
+            "required": false
+        },
+        "HEROKU_API_KEY": {
+            "description": "For adding sudo users",
+            "required": false
+        },
+        "HEROKU_APP_NAME": {
+            "description": "For adding sudo users",
             "required": false
         }
     },
