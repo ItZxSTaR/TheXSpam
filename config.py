@@ -17,8 +17,6 @@ if os.path.exists("Internal"):
 
 API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
-BOT_TOKEN = getenv("BOT_TOKEN")
-BOT_USERNAME = getenv("BOT_USERNAME", "")
 SESSION = getenv("SESSION")
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/ItZxSTaR/AltronUserbot")
 
@@ -47,15 +45,6 @@ SESSION7 = getenv("SESSION7")
 SESSION8 = getenv("SESSION8")
 SESSION9 = getenv("SESSION9")
 SESSION10 = getenv("SESSION10")
-
-#-------------------------BOT-----------------------------
-
-bot = Client(
-    'AltronUserbot',
-    api_id=API_ID,
-    api_hash=API_HASH,
-    bot_token=BOT_TOKEN,
-)
 
 #-------------------------CLIENTS-----------------------------
 

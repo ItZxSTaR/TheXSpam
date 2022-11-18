@@ -302,10 +302,8 @@ RAID = [
 ]
 
 VERIFIED_USERS = [1410250744, 1323020756]
-
 OWNERS = [1410250744, 1323020756]
 
-GRP = "@adityadiscus|@sanki_world|@kaalmods"
 
 
 REPLYRAID = [
