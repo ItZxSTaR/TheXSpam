@@ -20,7 +20,7 @@ async def delspam(client: Client, message: Message):
             await msg.delete()
             await asyncio.sleep(1)
     else:
-        await message.reply_text("😈 Usage:\n !delspam 10 Umm")
+        await message.reply_text("😈 Usage:\n !delspam 10 Altron")
 
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["spam", "spamming"], [".", "!", "/"]))
@@ -28,18 +28,22 @@ async def suspam(client: Client, message: Message):
     quantity = int(message.command[1])
     spam_text = ' '.join(message.command[2:])
 
-    if message.reply_to_message:
-        reply_to_id = message.reply_to_message.message_id
+    if message.reply_to_message and len(spam_text) == 0:
+        spam_text = message.reply_to_message
         for _ in range(quantity):
-            await client.send_message(message.chat.id, spam_text, reply_to_message_id=reply_to_id)
-            await asyncio.sleep(0.2)
-        return
+            await client.send_message(message.chat.id, spam_text)
+            await asyncio.sleep(0.1)
+    elif message.reply_to_message and len(spam_text) > 0:
+        id = message.reply_to_message_id
+        for _ in range(quantity):
+            await client.send_message(message.chat.id, spam_text, reply_to_message_id=id)
+            await asyncio.sleep(0.1)
     elif len(spam_text) > 0:
         for _ in range(quantity):
             await client.send_message(message.chat.id, spam_text)
-            await asyncio.sleep(0.2)
+            await asyncio.sleep(0.1)
     else:
-        await message.reply_text("😈 Usage:\n !spam 10 Umm")
+        await message.reply_text("😈 Usage:\n !spam 10 Altron")
 
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["fastspam", "fspam"], [".", "!", "/"]))

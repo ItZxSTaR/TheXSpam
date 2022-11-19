@@ -1,12 +1,13 @@
 import heroku3
 
 from datetime import datetime
+from pyrogram.types import Message
 from pyrogram import filters, Client
 from config import *
 
 
 @Client.on_message(filters.command(["ping"], ["/", ".", "!"]) & filters.user(SUDO_USERS))
-async def ping(Client, message):
+async def ping(_, message: Message):
     start = datetime.now()
     loda = await message.reply_text("» __ᴀʟᴛʀᴏɴ__")
     end = datetime.now()
@@ -18,7 +19,7 @@ Heroku = heroku3.from_key(HEROKU_API_KEY)
 sudousers = os.environ.get("SUDO_USERS", None)
 
 @Client.on_message(filters.command(["sudo"], ["/", ".", "!"]) & filters.user(OWNER_ID))
-async def addsudo(xspam: Client, message):
+async def addsudo(xspam: Client, message: Message):
     evil = await message.reply_text(f"» __ᴀᴅᴅɪɴɢ ᴜꜱᴇʀ ᴀꜱ ꜱᴜᴅᴏ...__")
     target = ""
     if HEROKU_APP_NAME is not None:

@@ -2,7 +2,7 @@ import asyncio
 from pyrogram import filters, Client
 from pyrogram.types import Message
 from config import SUDO_USERS
-from helpers.data import *
+from helpers.data import GROUP
 
 
 @Client.on_message(filters.command(["hang"], ["/", "!", "."]) & filters.user(SUDO_USERS))
