@@ -18,7 +18,7 @@ Heroku = heroku3.from_key(HEROKU_API_KEY)
 sudousers = os.environ.get("SUDO_USERS", None)
 
 @Client.on_message(filters.command(["sudo"], ["/", ".", "!"]) & filters.user(OWNER_ID))
-async def ping(xspam: Client, message):
+async def addsudo(xspam: Client, message):
     evil = await message.reply_text(f"» __ᴀᴅᴅɪɴɢ ᴜꜱᴇʀ ᴀꜱ ꜱᴜᴅᴏ...__")
     target = ""
     if HEROKU_APP_NAME is not None:

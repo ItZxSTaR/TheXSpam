@@ -1,4 +1,4 @@
-from pyrogram.types import *
+from pyrogram.types import Message
 import asyncio
 from random import choice
 from pyrogram import Client, filters

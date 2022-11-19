@@ -66,11 +66,11 @@
             "required": false
         },
         "HEROKU_API_KEY": {
-            "description": "For adding sudo users",
+            "description": "Fill this if you want to add Sudo Users Remotely",
             "required": false
         },
         "HEROKU_APP_NAME": {
-            "description": "For adding sudo users",
+            "description": "Fill this if you want to add Sudo Users Remotely",
             "required": false
         }
     },

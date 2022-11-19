@@ -19,9 +19,6 @@ API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
 SESSION = getenv("SESSION")
 OWNER_ID = int(getenv("OWNER_ID"))
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/ItZxSTaR/TheXSpam")
 
 def make_int(str_input):
     str_list = str_input.split(" ")
@@ -30,7 +27,7 @@ def make_int(str_input):
         int_list.append(int(x))
     int_list.append(OWNER_ID)
     return int_list
-  
+
 sudo = getenv("SUDO_USERS")
 SUDO_USERS = []
 if sudo:
@@ -49,6 +46,9 @@ SESSION7 = getenv("SESSION7")
 SESSION8 = getenv("SESSION8")
 SESSION9 = getenv("SESSION9")
 SESSION10 = getenv("SESSION10")
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/ItZxSTaR/TheXSpam")
 
 #-------------------------CLIENTS-----------------------------
 

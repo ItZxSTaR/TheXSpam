@@ -3,7 +3,6 @@ import importlib
 from altron import ALL_MODULES
 from pyrogram import idle
 from config import client, client2, client3, client4, client5, client6, client7, client8, client9, client10, call_py, call_py2, call_py3, call_py4, call_py5, call_py6, call_py7, call_py8, call_py9, call_py10
-from config import *
 
 
 async def main():
@@ -116,6 +115,7 @@ async def main():
             await client10.join_chat("HeroOfficialBots")
         except Exception as e:
             print(str(e))
+
     for all_module in ALL_MODULES:
         importlib.import_module("altron" + all_module)
     if call_py:

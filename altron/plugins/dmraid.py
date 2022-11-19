@@ -1,5 +1,5 @@
 from pyrogram import filters, Client
-from pyrogram.types import *
+from pyrogram.types import Message
 import asyncio
 from random import choice
 from helpers.data import *
