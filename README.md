@@ -24,7 +24,7 @@
 
 - PYROGRAM SESSION (V1.4)
 
-- SUDO USERS ID
+- OWNER ID
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
