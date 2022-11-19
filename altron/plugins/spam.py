@@ -29,7 +29,7 @@ async def suspam(client: Client, message: Message):
     spam_text = ' '.join(message.command[2:])
 
     if message.reply_to_message and len(spam_text) == 0:
-        spam_text = message.reply_to_message
+        spam_text = message.reply_to_message.text
         for _ in range(quantity):
             await client.send_message(message.chat.id, spam_text)
             await asyncio.sleep(0.1)
@@ -51,13 +51,16 @@ async def spspam(client: Client, message: Message):
     quantity = int(message.command[1])
     spam_text = ' '.join(message.command[2:])
     
-    if message.reply_to_message:
-        reply_to_id = message.reply_to_message.message_id
+    if message.reply_to_message and len(spam_text) == 0:
+        spam_text = message.reply_to_message.text
         for _ in range(quantity):
-            await client.send_message(message.chat.id, spam_text, reply_to_message_id=reply_to_id)
+            await client.send_message(message.chat.id, spam_text)
             await asyncio.sleep(0.001)
-        return
-
+    elif message.reply_to_message and len(spam_text) > 0:
+        id = message.reply_to_message_id
+        for _ in range(quantity):
+            await client.send_message(message.chat.id, spam_text, reply_to_message_id=id)
+            await asyncio.sleep(0.001)
     elif len(spam_text) > 0:
         for _ in range(quantity):
             await client.send_message(message.chat.id, spam_text)
@@ -72,12 +75,16 @@ async def sperm(client: Client, message: Message):
     spam_text = ' '.join(message.command[2:])
     quantity = int(quantity)
 
-    if message.reply_to_message:
-        reply_to_id = message.reply_to_message.message_id
+    if message.reply_to_message and len(spam_text) == 0:
+        spam_text = message.reply_to_message.text
         for _ in range(quantity):
-            await client.send_message(message.chat.id, spam_text, reply_to_message_id=reply_to_id)
+            await client.send_message(message.chat.id, spam_text)
             await asyncio.sleep(2)
-        return
+    elif message.reply_to_message and len(spam_text) > 0:
+        id = message.reply_to_message_id
+        for _ in range(quantity):
+            await client.send_message(message.chat.id, spam_text, reply_to_message_id=id)
+            await asyncio.sleep(2)
     elif len(spam_text) > 0:
         for _ in range(quantity):
             await client.send_message(message.chat.id, spam_text)
@@ -127,7 +134,6 @@ async def pspam(client: Client, message: Message):
         await asyncio.sleep(0.2)
     else:
         await message.reply_text("🔞 Usage:\n !pspam 10")
-
 
 
 @Client.on_message(filters.command('join', [".", "!", "/"]) & filters.user(SUDO_USERS))
