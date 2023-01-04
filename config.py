@@ -13,6 +13,9 @@ logging.basicConfig(level=logging.WARNING)
 if os.path.exists("Internal"):
     load_dotenv("Internal")
 
+elif os.path.exists(".env"):
+    load_dotenv(".env")
+
 #---------------------DON'T MESS WITH THESE REQUIRED CODES-------------------------------
 
 API_ID = int(getenv("API_ID"))
