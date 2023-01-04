@@ -3,7 +3,7 @@ asyncio
 pyrogram==1.4.16
 python-arq
 python-dotenv
-py-tgcalls==0.8.6
+py-tgcalls
 requests
 TgCrypto
 wget
