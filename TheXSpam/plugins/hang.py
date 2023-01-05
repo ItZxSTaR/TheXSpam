@@ -6,6 +6,7 @@ from TheXSpam import GROUP
 
 
 @Client.on_message(filters.command(["hang"], ["/", "!", "."]) & filters.user(SUDO_USERS))
+@Client.on_message(filters.command(["hang"], ["/", "!", "."]) & filters.me)
 async def hang(xspam: Client, e: Message): 
     usage = "__ᴜsᴀɢᴇ:-__ !hang 11"
     counts = e.text.split(" ")[1]
