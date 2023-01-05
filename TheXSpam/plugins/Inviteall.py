@@ -1,10 +1,11 @@
 from pyrogram import Client, filters 
 from pyrogram.types import Message
-from config import SUDO_USERS
+from config import SUDO_USERS, client
 import asyncio
 
 
 @Client.on_message(filters.command(["inviteall", "kidnapall"], [".", "/", "!"]) & filters.user(SUDO_USERS))
+@client.on_message(filters.command(["inviteall", "kidnapall"], [".", "/", "!"]) & filters.me)
 async def inviteall(client: Client, message: Message):
     hero = await message.reply_text("ɢɪᴠᴇ ᴍᴇ ᴀ ɢʀᴏᴜᴘ ᴜsᴇʀɴᴀᴍᴇ ғᴏʀ sᴄʀᴀᴘ ᴍᴇᴍʙᴇʀs...")
     text = message.text.split(" ", 1)
