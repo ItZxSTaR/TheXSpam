@@ -2,11 +2,11 @@ import sys
 from pyrogram.types import Message
 from pyrogram import Client, filters
 from os import execle, environ
-from config import SUDO_USERS
+from config import SUDO_USERS, client
 from TheXSpam import errors, sudo_users_only
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["restart", "reboot"], [".", "/", "!"]))
-@Client.on_message(filters.me & filters.command(["restart", "reboot"], [".", "/", "!"]))
+@client.on_message(filters.me & filters.command(["restart", "reboot"], [".", "/", "!"]))
 @errors
 @sudo_users_only
 async def restart_bot(_, message: Message):
