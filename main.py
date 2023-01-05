@@ -107,26 +107,6 @@ async def main():
 
     for all_module in ALL_MODULES:
         importlib.import_module("altron" + all_module)
-    if call_py:
-        await call_py.start()
-    if call_py2:
-        await call_py2.start()
-    if call_py3:
-        await call_py3.start()
-    if call_py4:
-        await call_py4.start()
-    if call_py5:
-        await call_py5.start()
-    if call_py6:
-        await call_py6.start()
-    if call_py7:
-        await call_py7.start()
-    if call_py8:
-        await call_py8.start()
-    if call_py9:
-        await call_py9.start()
-    if call_py10:
-        await call_py10.start()
     await idle()
 
 loop = asyncio.get_event_loop()
