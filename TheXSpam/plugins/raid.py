@@ -7,6 +7,7 @@ from config import *
 
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["raid"], [".", "/", "!"]))
+@Client.on_message(filters.me & filters.command(["raid"], [".", "/", "!"]))
 async def dmraid(xspam: Client, e: Message):
       TheAltronX = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
       if len(TheAltronX) == 2:
@@ -43,6 +44,7 @@ async def dmraid(xspam: Client, e: Message):
 
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["sraid"], [".", "/", "!"]))
+@Client.on_message(filters.me & filters.command(["sraid"], [".", "/", "!"]))
 async def dmraid(xspam: Client, e: Message):
       TheAltronX = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
 
@@ -70,6 +72,7 @@ async def dmraid(xspam: Client, e: Message):
 
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["mraid"], [".", "/", "!"]))
+@Client.on_message(filters.me & filters.command(["mraid"], [".", "/", "!"]))
 async def dmraid(xspam: Client, e: Message):
       TheAltronX = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
 
