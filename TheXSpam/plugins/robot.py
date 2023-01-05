@@ -7,7 +7,6 @@ from config import *
 
 
 @Client.on_message(filters.command(["ping"], ["/", ".", "!"]) & filters.user(SUDO_USERS))
-@client.on_message(filters.command(["ping"], ["/", ".", "!"]) & filters.me)
 async def ping(_, message: Message):
     start = datetime.now()
     loda = await message.reply_text("» __ᴀʟᴛʀᴏɴ__")
@@ -20,7 +19,6 @@ Heroku = heroku3.from_key(HEROKU_API_KEY)
 sudousers = os.environ.get("SUDO_USERS", None)
 
 @Client.on_message(filters.command(["sudo"], ["/", ".", "!"]) & filters.user(OWNER_ID))
-@client.on_message(filters.command(["sudo"], ["/", ".", "!"]) & filters.me)
 async def addsudo(xspam: Client, message: Message):
     evil = await message.reply_text(f"» __ᴀᴅᴅɪɴɢ ᴜꜱᴇʀ ᴀꜱ ꜱᴜᴅᴏ...__")
     target = ""
@@ -48,7 +46,6 @@ async def addsudo(xspam: Client, message: Message):
 
 
 @Client.on_message(filters.command(["help"], ["/", "!", "."]) & filters.user(SUDO_USERS))
-@client.on_message(filters.command(["help"], ["/", "!", "."]) & filters.me)
 async def start(client, message: Message):
     await message.reply_text(
     f"»__ ғᴏʀ ʜᴇʟᴘ ᴍᴇɴᴜ ɢᴏ ᴛᴏ ᴛʜɪs ʙᴏᴛ's ᴅᴍ__ » **@AltronUserbot** \n\n__sᴏᴏɴ ᴀᴅᴅɪɴɢ ɪɴʟɪɴᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ʙᴜᴛᴛᴏɴs ɪɴ ᴜsᴇʀʙᴏᴛ. ᴊᴏɪɴ__ » **@TheAltron_X @TheAltron**"
