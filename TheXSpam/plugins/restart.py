@@ -3,7 +3,7 @@ from pyrogram.types import Message
 from pyrogram import Client, filters
 from os import execle, environ
 from config import SUDO_USERS
-from helpers.decorators import errors, sudo_users_only
+from TheXSpam import errors, sudo_users_only
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["restart", "reboot"], [".", "/", "!"]))
 @errors
