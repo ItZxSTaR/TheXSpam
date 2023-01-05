@@ -26,7 +26,7 @@
 
 - `PYROGRAM SESSION (V1.4)`
 
-- `OWNER ID`
+- `OWNER_ID`
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
