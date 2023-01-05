@@ -20,13 +20,13 @@
 
 # Rᴇǫᴜɪʀᴇᴍᴇɴᴛs
 
-- API_ID
+- `API_ID`
 
-- API_HASH
+- `API_HASH`
 
-- PYROGRAM SESSION (V1.4)
+- `PYROGRAM SESSION (V1.4)`
 
-- OWNER ID
+- `OWNER ID`
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
