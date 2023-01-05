@@ -14,15 +14,15 @@ logging.basicConfig(level=logging.WARNING)
 #----------------------------------- REQUIRED CODES --------------------------------------#
 
 
-API_ID = 22273859
+API_ID = int(getenv("API_ID", "8321"))
 
-API_HASH = "125c7cf7edc8c0474a0be891eaf69d6c"
+API_HASH = getenv("API_HASH", "974cb540f70e55")
 
-SESSION = "AQDCibWLF349oL1Zz7SMwRO1fcHrIlyn7TlF6gAmATlO35_QHu615DmaWNXqasW5KdcYLXtJu_uJ1cQXuFCawO_H4MRxSbbpavR5mpr_U5D40k59RDapL4nRllGr7GsutboGMbx3gg2-SpISwsy_RUkF2wLUWRnH55-O9xBBAeAwgvunfvlKsdb-WLrIo2XF4ec7YdZ62X1C6O4_lbkUDbTCthdDrq5jt3GKYkJUsHvB8OMSm9pTWs_Xv0ctkJDNaqWcgIa1u5kcOiTee2QYrVuV9mDWEIC3HYz3vl8qt8f2-EHSPur0BIEYrIR-h9cmiNwHIOq0ca-YVdJcpbObWd31AAAAAWPASsIA"
+SESSION = getenv("SESSION", "rsghvs467fA")
 
-ALIVE_PIC = "https://te.legra.ph/file/ab721701ce35ff2856276.jpg"
+ALIVE_PIC = getenv("ALIVE_PIC", "https://te.legra.ph/file/ab721701ce35ff2856276.jpg")
 
-OWNER_ID = 5968513730
+OWNER_ID = int(os.environ.get("OWNER_ID", "1979178376"))
 
 
 #-------------------------------- OPTIONAL -------------------------------------#
