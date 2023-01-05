@@ -9,7 +9,7 @@
 
 ━━━━━━━━━━━━━━━━━━━━━━
 # Dᴇᴘʟᴏʏ Oɴ Hᴇʀᴏᴋᴜ​ 🚀
-ㅤㅤㅤᴛʜᴇ ᴇᴀsɪᴇsᴛ ᴡᴀʏ ᴛᴏ ᴅᴇᴘʟᴏʏ ᴀʟᴛʀᴏɴ​
+ㅤㅤᴛʜᴇ ᴇᴀsɪᴇsᴛ ᴡᴀʏ ᴛᴏ ᴅᴇᴘʟᴏʏ ᴀʟᴛʀᴏɴ​
 
 - ⚠️ Do not forget to fork this repo. Else error can occur in deployment.
 
