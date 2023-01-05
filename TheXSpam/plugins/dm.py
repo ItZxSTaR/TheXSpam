@@ -2,7 +2,7 @@ from pyrogram import filters, Client
 from pyrogram.types import Message
 import asyncio
 from random import choice
-from TheXSpam.modules import *
+from TheXSpam import *
 from config import *
 
 
