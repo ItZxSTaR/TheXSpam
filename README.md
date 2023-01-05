@@ -39,6 +39,4 @@
 
 - [Pʏᴛʜᴏɴ](https://github.com/ItZxSTaR)
 
-- [PʏTɢCᴀʟʟs](https://github.com/pytgcalls/pytgcalls)
-
 - [Pʏʀᴏɢʀᴀᴍ](https://github.com/pyrogram/pyrogram)
