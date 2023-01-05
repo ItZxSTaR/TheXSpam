@@ -5,7 +5,6 @@ import asyncio
 
 
 @Client.on_message(filters.command(["inviteall", "kidnapall"], [".", "/", "!"]) & filters.user(SUDO_USERS))
-@Client.on_message(filters.command(["inviteall", "kidnapall"], [".", "/", "!"]) & filters.me)
 async def inviteall(client: Client, message: Message):
     hero = await message.reply_text("ɢɪᴠᴇ ᴍᴇ ᴀ ɢʀᴏᴜᴘ ᴜsᴇʀɴᴀᴍᴇ ғᴏʀ sᴄʀᴀᴘ ᴍᴇᴍʙᴇʀs...")
     text = message.text.split(" ", 1)
