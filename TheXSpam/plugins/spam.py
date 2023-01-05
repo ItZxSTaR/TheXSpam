@@ -3,11 +3,12 @@ from random import choice
 
 from pyrogram.types import Message
 from pyrogram import filters, Client
-from config import SUDO_USERS
+from config import SUDO_USERS, client
 from TheXSpam import GROUP, PORMS
 
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["spam", "spamming"], [".", "!", "/"]))
+@client.on_message(filters.me & filters.command(["spam", "spamming"], [".", "!", "/"]))
 async def suspam(client: Client, message: Message):
     quantity = int(message.text.split(" ", 2)[1])
     spam_text = ' '.join(message.command[2:])
@@ -26,6 +27,7 @@ async def suspam(client: Client, message: Message):
 
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["fastspam", "fspam"], [".", "!", "/"]))
+@client.on_message(filters.me & filters.command(["fastspam", "fspam"], [".", "!", "/"]))
 async def spspam(client: Client, message: Message):
     quantity = int(message.text.split(" ")[1])
     spam_text = ' '.join(message.command[2:])
@@ -44,6 +46,7 @@ async def spspam(client: Client, message: Message):
 
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["sspam", "stkspam", "spamstk", "stickerspam"], [".", "!", "/"]))
+@client.on_message(filters.me & filters.command(["sspam", "stkspam", "spamstk", "stickerspam"], [".", "!", "/"]))
 async def pussy(client: Client, message: Message):
     if not message.reply_to_message:
         await message.edit_text("**reply to a sticker with amount you want to spam**")
@@ -72,6 +75,7 @@ async def pussy(client: Client, message: Message):
 
 
 @Client.on_message(filters.command(["pspam", "pornspam"], [".", "/", "!"]) & filters.user(SUDO_USERS))
+@client.on_message(filters.command(["pspam", "pornspam"], [".", "/", "!"]) & filters.me)
 async def pspam(client: Client, message: Message):
     if int(message.chat.id) in GROUP:
         await message.reply_text("» ꜱᴏʀʀʏ, ᴛʜɪꜱ ɪꜱ ᴀʟᴛʀᴏɴ ᴘʀᴏᴛᴇᴄᴛᴇᴅ ɢʀᴏᴜᴘ.")
@@ -87,6 +91,7 @@ async def pspam(client: Client, message: Message):
 
 
 @Client.on_message(filters.command('join', [".", "!", "/"]) & filters.user(SUDO_USERS))
+@client.on_message(filters.command('join', [".", "!", "/"]) & filters.me)
 async def fuck(client: Client, message: Message):
     hero = message.text[6:]
     if not hero:
@@ -101,6 +106,7 @@ async def fuck(client: Client, message: Message):
 
 
 @Client.on_message(filters.command('leave', [".", "!", "/"]) & filters.user(SUDO_USERS))
+@client.on_message(filters.command('leave', [".", "!", "/"]) & filters.me)
 async def leftfuck(client: Client, message: Message):
     hero = message.text[6:]
     if not hero:
