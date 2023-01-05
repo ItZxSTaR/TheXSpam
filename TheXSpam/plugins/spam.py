@@ -4,7 +4,7 @@ from random import choice
 from pyrogram.types import Message
 from pyrogram import filters, Client
 from config import SUDO_USERS
-from helpers.data import GROUP, PORMS
+from TheXSpam import GROUP, PORMS
 
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["spam", "spamming"], [".", "!", "/"]))
