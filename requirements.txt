@@ -1,8 +1,5 @@
-aiofiles
 aiohttp
 asyncio
 pyrogram==1.4.16
-python-arq
-python-dotenv
 TgCrypto
 wget

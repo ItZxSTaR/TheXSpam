@@ -9,11 +9,9 @@
 
 ━━━━━━━━━━━━━━━━━━━━━━
 # Dᴇᴘʟᴏʏ Oɴ Hᴇʀᴏᴋᴜ​ 🚀
-ㅤㅤᴛʜᴇ ᴇᴀsɪᴇsᴛ ᴡᴀʏ ᴛᴏ ᴅᴇᴘʟᴏʏ ᴀʟᴛʀᴏɴ​
+ㅤㅤㅤᴛʜᴇ ᴇᴀsɪᴇsᴛ ᴡᴀʏ ᴛᴏ ᴅᴇᴘʟᴏʏ ᴀʟᴛʀᴏɴ​
 
 - ⚠️ Do not forget to fork this repo. Else error can occur in deployment.
-
-- ⚠️ This repo is under maintenance. Please wait.
 
 <p align="left"><a href="https://heroku.com/deploy"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-cyan?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 ━━━━━━━━━━━━━━━━━━━━━━
@@ -26,14 +24,30 @@
 
 - `PYROGRAM SESSION (V1.4)`
 
-- `OWNER_ID`
+- `OWNER ID`
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+
+# Pʏʀᴏɢʀᴀᴍ (V1.4) Sᴇssɪᴏɴ Sᴛʀɪɴɢ
+
+- [BᴏᴛLɪɴᴋ](https://t.me/SessionStringGeneratorRobot)
+
+- Bᴏᴛ Usᴇʀɴᴀᴍᴇ - `@SessionStringGeneratorRobot`
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+
+# Oᴡɴᴇʀ ᴀɴᴅ Dᴇᴠᴇʟᴏᴘᴇʀ 👨🏻‍💻
+
+- [Hᴇʀᴏ](https://github.com/Shailendra34)
+
+- [Pʏᴛʜᴏɴ](https://github.com/ItZxSTaR)
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
 # Cʀᴇᴅɪᴛs ✌
 
-- [Sʜᴀɪʟᴇɴᴅʀᴀ](https://github.com/Shailendra34)
-
-- [Pʏᴛʜᴏɴ](https://github.com/ItZxSTaR)
+- [PʏTɢCᴀʟʟs](https://github.com/pytgcalls/pytgcalls)
 
 - [Pʏʀᴏɢʀᴀᴍ](https://github.com/pyrogram/pyrogram)

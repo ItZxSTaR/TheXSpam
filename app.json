@@ -1,8 +1,6 @@
 {
-    "name": "ᴀʟᴛʀᴏɴ x ᴜsᴇʀʙᴏᴛ",
-    "logo": "https://te.legra.ph/file/7abe179ff252aaabbf2a5.jpg",
-    "description": "ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴘʀᴇᴍɪᴜᴍ ᴍᴜsɪᴄ + sᴘᴀᴍ ᴜsᴇʀʙᴏᴛ ",
-    "keywords": ["telegram"],
+    "name": "PyAltron",
+    "keywords": ["Telegram", "Altron", "Pyrogram"],
     "stack": "container",
     "env": {
         "SESSION": {
@@ -45,29 +43,22 @@
             "description": "pyrogram v1.4 string session here",
             "required": false
         },
-        "API_ID": {
-            "description": "telegram api id here",
-            "required": true
-        },
-        "OWNER_ID": {
-            "description": "bot's owner id",
-            "required": true
+        "ALIVE_PIC": {
+            "required": false
         },
         "SUDO_USERS": {
-            "description": "Who have Access Your Account But Rearly Plugins there",
+            "required": false
+        },
+        "API_ID": {
+            "description": "telegram api id here",
             "required": false
         },
         "API_HASH": {
             "description": "telegram api hash here",
+            "required": false
+        },
+        "OWNER_ID": {
             "required": true
-        },
-        "HEROKU_API_KEY": {
-            "description": "Fill this if you want to add Sudo Users Remotely",
-            "required": false
-        },
-        "HEROKU_APP_NAME": {
-            "description": "Fill this if you want to add Sudo Users Remotely",
-            "required": false
         }
     },
     "buildpacks": [

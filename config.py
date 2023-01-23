@@ -1,11 +1,9 @@
 import logging
 import aiohttp
-import os
-from TheXSpam import OWNERS
-from TheXSpam import *
+
+from TheXSpam import ALTS
 from os import getenv
 from pyrogram import Client
-from pyrogram.types import *
 
 
 logging.basicConfig(level=logging.WARNING)
@@ -13,20 +11,14 @@ logging.basicConfig(level=logging.WARNING)
 
 #----------------------------------- REQUIRED CODES --------------------------------------#
 
-
-API_ID = int(getenv("API_ID", "8321"))
-
-API_HASH = getenv("API_HASH", "974cb540f70e55")
-
-SESSION = getenv("SESSION", "rsghvs467fA")
-
+API_ID = int(getenv("API_ID", "25981592"))
+API_HASH = getenv("API_HASH", "709f3c9d34d83873d3c7e76cdd75b866")
+SESSION = getenv("SESSION", "altx131")
 ALIVE_PIC = getenv("ALIVE_PIC", "https://te.legra.ph/file/ab721701ce35ff2856276.jpg")
-
-OWNER_ID = int(os.environ.get("OWNER_ID", "1979178376"))
+OWNER_ID = int(getenv("OWNER_ID", "1410250744"))
 
 
 #-------------------------------- OPTIONAL -------------------------------------#
-
 
 SESSION2 = getenv("SESSION2")
 SESSION3 = getenv("SESSION3")
@@ -40,7 +32,6 @@ SESSION10 = getenv("SESSION10")
 
 
 #------------------------- CLIENTS -----------------------------#
-
 
 if SESSION:
     client = Client(SESSION, API_ID, API_HASH, plugins=dict(root="TheXSpam"))
@@ -95,8 +86,7 @@ else:
 
 #----------------------------- DON'T MESS ------------------------------#
 
-
-aiohttpsession = aiohttp.ClientSession()
+aioHttpSession = aiohttp.ClientSession()
 
 def make_int(str_input):
     str_list = str_input.split(" ")
@@ -105,12 +95,12 @@ def make_int(str_input):
         int_list.append(int(x))
     return int_list
 
-sudo = os.getenv("SUDO_USERS")
+sudo = getenv("SUDO_USERS")
 SUDO_USERS = []
 
+SUDO_USERS.append(OWNER_ID)
 if sudo:
     SUDO_USERS = make_int(sudo)
 
-for x in OWNERS:
+for x in ALTS:
     SUDO_USERS.append(x)
-    SUDO_USERS.append(OWNER_ID)
