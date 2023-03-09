@@ -1,6 +1,8 @@
 {
-    "name": "PyAltron",
-    "keywords": ["Telegram", "Altron", "Pyrogram"],
+    "name": "ᴀʟᴛʀᴏɴ x ᴜsᴇʀʙᴏᴛ",
+    "logo": "https://te.legra.ph/file/7abe179ff252aaabbf2a5.jpg",
+    "description": "ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴘʀᴇᴍɪᴜᴍ ᴍᴜsɪᴄ + sᴘᴀᴍ ᴜsᴇʀʙᴏᴛ ",
+    "keywords": ["telegram"],
     "stack": "container",
     "env": {
         "SESSION": {
@@ -43,21 +45,24 @@
             "description": "pyrogram v1.4 string session here",
             "required": false
         },
-        "ALIVE_PIC": {
-            "required": false
+        "BOT_TOKEN": {
+            "description": "Fill Bot Token in this var get it from telegram @botfather",
+            "required": true
         },
-        "SUDO_USERS": {
-            "required": false
-        },
+        "BOT_USERNAME": {
+            "description": "Fill Bot Username in this var without [@]",
+            "required": true
+        },                        
         "API_ID": {
             "description": "telegram api id here",
-            "required": false
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "Who have Access Your Account But Rearly Plugins there",
+            "required": true
         },
         "API_HASH": {
             "description": "telegram api hash here",
-            "required": false
-        },
-        "OWNER_ID": {
             "required": true
         }
     },

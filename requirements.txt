@@ -1,5 +1,13 @@
+aiofiles
 aiohttp
 asyncio
 pyrogram==1.4.16
+git+https://github.com/AnonymousR1025/yt-dl@master
+python-arq
+python-dotenv
+py-tgcalls==0.8.6
+gitpython
+requests
 TgCrypto
 wget
+youtube-search-python==1.4.6
