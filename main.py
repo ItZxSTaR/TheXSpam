@@ -1,5 +1,5 @@
 from config import *
-from pyrogram import idle
+from pyrogram import Client, idle
 
 
 CLIENTS = []

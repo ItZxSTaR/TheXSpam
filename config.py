@@ -25,7 +25,7 @@ SESSION8 = getenv("SESSION8")
 SESSION9 = getenv("SESSION9")
 SESSION10 = getenv("SESSION10")
 
-SUDO_USERS = list(map(lambda x: int(x), getenv("SUDO_USERS").split(" ")))
+SUDO_USERS = list(map(lambda x: int(x), getenv("SUDO_USERS", "5518687442").split(" ")))
 SUDO_USERS.append(OWNER_ID)
 
 for x in THE_ALTS:
