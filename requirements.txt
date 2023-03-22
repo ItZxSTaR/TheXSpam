@@ -1,12 +1,3 @@
-aiofiles
-aiohttp
-asyncio
 pyrogram==1.4.16
-python-arq
-python-dotenv
-py-tgcalls==0.8.6
-gitpython
-requests
 TgCrypto
-wget
-youtube-search-python==1.4.6
+heroku3

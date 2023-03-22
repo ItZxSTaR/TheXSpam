@@ -1,9 +1,14 @@
 {
-    "name": "ᴀʟᴛʀᴏɴ x ᴜsᴇʀʙᴏᴛ",
-    "logo": "https://te.legra.ph/file/7abe179ff252aaabbf2a5.jpg",
-    "description": "ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴘʀᴇᴍɪᴜᴍ ᴍᴜsɪᴄ + sᴘᴀᴍ ᴜsᴇʀʙᴏᴛ ",
-    "keywords": ["telegram"],
-    "stack": "container",
+    "name": "THE X SPAM",
+    "logo": "https://te.legra.ph/file/07d39b85c6cea32f15259.jpg",
+    "keywords": [
+      "telegram",
+      "bot",
+      "Altron"
+    ],
+      "buildpacks": [{
+      "url": "heroku/python"
+    }],
     "env": {
         "SESSION": {
             "description": "pyrogram v1.4 string session here",
@@ -45,30 +50,32 @@
             "description": "pyrogram v1.4 string session here",
             "required": false
         },
-        "BOT_TOKEN": {
-            "description": "Fill Bot Token in this var get it from telegram @botfather",
-            "required": true
-        },
-        "BOT_USERNAME": {
-            "description": "Fill Bot Username in this var without [@]",
-            "required": true
-        },                        
-        "API_ID": {
-            "description": "telegram api id here",
-            "required": true
+        "ALIVE_PIC": {
+            "required": false
         },
         "SUDO_USERS": {
-            "description": "Who have Access Your Account But Rearly Plugins there",
-            "required": true
+            "description": "Sudo Users ID",
+            "required": false
+        },
+        "API_ID": {
+            "description": "telegram api id here",
+            "required": false
         },
         "API_HASH": {
             "description": "telegram api hash here",
+            "required": false
+        },
+        "OWNER_ID": {
             "required": true
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Required when you want to add SUDO_USERS using bot commands.",
+            "required": false
+        },
+        "HEROKU_API_KEY": {
+            "description": "Required when you want to add SUDO_USERS using bot commands.",
+            "required": false
         }
-    },
-    "buildpacks": [
-    {
-      "url": "heroku/python"
     }
-  ]
-}
+  }
+  
