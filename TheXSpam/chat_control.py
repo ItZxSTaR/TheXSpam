@@ -13,11 +13,11 @@ from pyrogram.types import Message
 
 @Client.on_message(filters.command(["join"], ["/", "!", "."]) & filters.user(SUDO_USERS))
 async def join(client: Client, message: Message):
-    op = message.text.split(" ")
-    if len(op) == 1:
+    alt = message.text.split(" ")
+    if len(alt) == 1:
         return await message.reply_text("`Need a chat username or chat-id or invite link to join.`")
     try:
-        await client.join_chat(op)
+        await client.join_chat(alt[1])
         await message.reply_text(f"**Joined**")
     except Exception as ex:
         await message.reply_text(f"**ERROR:** \n\n{str(ex)}")
