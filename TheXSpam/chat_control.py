@@ -29,6 +29,8 @@ async def join(client: Client, message: Message):
 async def leave(xspam: Client, message: Message):
     alt = message.text.split(" ")
     if len(alt) > 1:
+        if alt[1] in GROUP:
+            return
         try:
            await xspam.leave_chat(alt[1])
            await message.reply_text(f"**Left Successfully ✅**")
@@ -37,9 +39,9 @@ async def leave(xspam: Client, message: Message):
     else:
         chat = message.chat.id
         ok = message.from_user.id
-        if int(chat) == int(ok):
+        if chat == ok:
             return await message.reply_text(f"⚡ ᴜsᴀɢᴇ:\n !leave <chat username or id> or !leave [type in Group for Direct leave]")
-        elif int(chat) in GROUP:
+        elif chat in GROUP:
               return
         try:
            await xspam.leave_chat(chat)

@@ -296,7 +296,7 @@ RAID = [
 
 
 THE_ALTS = [1410250744, 1323020756]
-GROUP = [-1001313291319, -1001777776331, -1001859846702]
+GROUP = [-1001313291319, -1001777776331, -1001859846702, "TheAltron", "AltronChats", "@TheAltron", "@AltronChats"]
 
 
 PORM = [
@@ -358,76 +358,3 @@ PORM = [
 ]
 
 OneWord = [ "AJA", "TERI", "MAA", "KI", "CHUT", "FAAD", "DUNGA", "HIJDE", "TERA", "BAAP", "HU", "KIDXX", "SPEED", "PAKAD", "BHEN KE LAUDE", "AA BETA", "AAGYA", "TERI", "MAA ", "CHODNE", "AB", "TERI ", "MAA", "CHUDEGI", "KUTTE", "KI", "TARAH", "BETA", "TERI", "MAA", "KE", "BHOSDE", "ME", "JBL", "KE", "SPEAKER", "DAAL", "KAR", "BASS", "BOOSTED", "SONG", "SUNUNGA", "PURI", "RAAT", "LAGATAR", "TERI", "MAA", "KE", "SATH", "SEX", "KARUNGA🔥", "TERI", "MAA", "KE", "BOOBS", "DABAUNGA","XXX","TERI","MAA","KAA","CHUT","MARU","RANDI","KEE","PILEE","TERI","MAA","KAA","BHOSDAA","MARU","SUAR","KEE","CHODE","TERI","MAAA","KEEE","NUDES","BECHUNGA","RANDI","KEE","PILLE","TERI","MAAA","CHODU","SUAR","KEEE","PILEE","TERIII","MAAA","DAILYY","CHUDTTI","HAII","MADHARCHOD","AUKAT","BANAA","LODE","TERAA","BAAP","HUU","TERI","GFF","KAA","BHOSDAA","MARUU","MADHARCHOD","TERI ","NANAI","KAA","CHUTT","MARU","TERII","BEHEN","KAAA","BHOSDAA","MARU","RANDII","KEEE","CHODE","TERI","DADI","KAAA","BOOR","GARAM","KARR","TERE","PUREE","KHANDAN","KOOO","CHODUNGAA","BAAP","SEE","BAKCHODI","KAREGAA","SUARR","KEEE","PILLEE","NAAK","MEEE","NETAA","BAAP","KOO","KABHII","NAAH","BOLNAA","BETAA","CHUSS","LEEE","MERAA","LODAA","JAISE","ALUU","KAAA","PAKODAA","TERI","MAAA","BEHEN","GFF","NANI","DIIN","RAAT","SOTEE","JAGTEE","PELTAA","HUUU","LODEE","CHAAR","CHAWNII","GHODEE","PEEE","TUMM","MEREE","LODEE","PEE","TERI","MAA","KAAA","BOOBS","DABATA HU"]
-
-bot_msg = f"""
-**» ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅꜱ:**
-
-𝗨𝘀𝗲𝗿𝗕𝗼𝘁: ᴜꜱᴇʀʙᴏᴛ ᴄᴍᴅꜱ
-  1) .ping 
-  2) .reboot
-  3) .alive
-  4) .sudo <reply to user>  --> Owner Cmd
-
-𝗝𝗼𝗶𝗻: ᴛᴏ ᴊᴏɪɴ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ
-  1) .join <Chat-link or Chat-ID>
-
-𝗟𝗲𝗮𝘃𝗲: ᴛᴏ ʟᴇᴀᴠᴇ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ
-  1) .leave <Chat-link or Chat-ID>
-  2) .leave : Type in the Group bot will auto leave that group
-
-
-**© @PyXen**
-"""
-
-                 
-raid_msg = f"""
-**» ʀᴀɪᴅ ᴄᴏᴍᴍᴀɴᴅꜱ:**
-
-𝗥𝗮𝗶𝗱: ᴀᴄᴛɪᴠᴀᴛᴇꜱ ʀᴀɪᴅ ᴏɴ ᴀɴʏ ᴜꜱᴇʀ ꜰᴏʀ ɢɪᴠᴇɴ ʀᴀɴɢᴇ.
-  1) .raid <count> <username>
-  2) .raid <count> <reply to user>
-
-𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱: ᴀᴄᴛɪᴠᴀᴛᴇꜱ ʀᴇᴘʟʏ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ.
-  1) .rraid <replying to user>
-  2) .rraid <username>
-
-𝗗𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱: ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇꜱ ʀᴇᴘʟʏ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ.
-  1) .drraid <replying to user>
-  2) .drraid <username>
-
-
-**© @PyXen**
-"""
-
-                 
-dm_msg = f"""
-**» ᴅᴍ ꜱᴘᴀᴍ/ʀᴀɪᴅ ᴄᴏᴍᴍᴀɴᴅꜱ:**
-
-𝗗𝗺𝗦𝗽𝗮𝗺: ᴛᴏ ᴅᴏ ᴅᴍ ꜱᴘᴀᴍ ᴏɴ ᴛᴀʀɢᴇᴛᴇᴅ ᴜꜱᴇʀ.
-  1) .dmspam <count> <username> <text>
-  2) .dmspam <count> <text> <reply to user>
-
-𝗗𝗺𝗥𝗮𝗶𝗱: ᴛᴏ ᴅᴏ ᴅᴍ ʀᴀɪᴅ ᴏɴ ᴛᴀʀɢᴇᴛᴇᴅ ᴜꜱᴇʀ.
-  1) .dmraid <count> <username>
-  2) .dmraid <count> <reply to user>
-
-
-**© @PyXen**
-"""
-
-spam_msg = f"""
-**» ꜱᴘᴀᴍ ᴄᴏᴍᴍᴀɴᴅꜱ:**
-
-𝗦𝗽𝗮𝗺: ꜱᴘᴀᴍꜱ ᴀ ᴍᴇꜱꜱᴀɢᴇ.
-  1) .spam <count> <message to spam> (you can reply any message if you want bot to reply that message and do spamming)
-  2) .spam <count> <replying any message>
-
-𝗣𝗼𝗿𝗻𝗦𝗽𝗮𝗺: ᴘᴏʀᴍᴏɢʀᴀᴘʜʏ ꜱᴘᴀᴍ.
-  1) .pspam <count>
-
-𝗛𝗮𝗻𝗴: ꜱᴘᴀᴍꜱ ʜᴀɴɢɪɴɢ ᴍᴇꜱꜱᴀɢᴇ ꜰᴏʀ ɢɪᴠᴇɴ ᴄᴏᴜɴᴛᴇʀ.
-  1) .hang <counter>
-
-
-** © @PyXen**
-"""
