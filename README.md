@@ -36,19 +36,3 @@
 - Bᴏᴛ Usᴇʀɴᴀᴍᴇ - `@SessionStringGeneratorRobot`
 
 ━━━━━━━━━━━━━━━━━━━━━━
-
-
-# Oᴡɴᴇʀ ᴀɴᴅ Dᴇᴠᴇʟᴏᴘᴇʀ 👨🏻‍💻
-
-- [Pʏᴛʜᴏɴ](https://github.com/ItZxSTaR)
-
-- [Hᴇʀᴏ](https://github.com/Shailendra34)
-
-
-━━━━━━━━━━━━━━━━━━━━━━
-
-# Cʀᴇᴅɪᴛs ✌
-
-- [PʏTɢCᴀʟʟs](https://github.com/pytgcalls/pytgcalls)
-
-- [Pʏʀᴏɢʀᴀᴍ](https://github.com/pyrogram/pyrogram)
