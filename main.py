@@ -6,10 +6,10 @@ CLIENTS = []
 
 for SESSION in SESSIONS:
     if SESSION:
-        client = Client(
-            session_name=SESSION,
+        client = Client("altron",
             api_id=API_ID,
             api_hash=API_HASH,
+            session_string=SESSION,            
             plugins=dict(root="TheXSpam"),
         )
         CLIENTS.append(client)
