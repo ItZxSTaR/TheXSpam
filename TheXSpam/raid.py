@@ -52,7 +52,7 @@ async def raid(xspam: Client, message: Message):
                   for _ in range(counts):
                         reply = choice(RAID)
                         msg = f"{mention} {reply}"
-                        await xspam.send_chat_action(message.chat.id, ChatAction.TYPING)
+                        await Client.send_chat_action(message.chat.id, ChatAction.TYPING)
                         await xspam.send_message(message.chat.id, msg)
                         await asyncio.sleep(0.3)
 
@@ -126,5 +126,5 @@ async def watcher(bot, msg: Message):
       id = msg.from_user.id
       if id in rusers:
             reply = choice(RAID)
-            await bot.send_chat_action(msg.chat.id, ChatAction.TYPING)
+            await Client.send_chat_action(msg.chat.id, ChatAction.TYPING)
             await msg.reply_text(reply)
