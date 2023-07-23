@@ -1,5 +1,5 @@
 import asyncio
-
+from pyrogram.enums import ChatAction
 from random import choice
 from pyrogram import Client, filters
 from pyrogram.types import Message
@@ -12,7 +12,7 @@ from config import OWNER_ID, SUDO_USERS
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["raid"], ["/", "!", "."]))
 async def raid(xspam: Client, message: Message):  
-      # Hero = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
+      
       alt = message.text.split(" ")
 
       if len(alt) > 2:
@@ -31,6 +31,7 @@ async def raid(xspam: Client, message: Message):
                   for _ in range(counts):
                         reply = choice(RAID)
                         msg = f"{mention} {reply}"
+                        await xspam.send_chat_action(message.chat.id, ChatAction.TYPING)
                         await xspam.send_message(message.chat.id, msg)
                         await asyncio.sleep(0.3)
 
@@ -51,6 +52,7 @@ async def raid(xspam: Client, message: Message):
                   for _ in range(counts):
                         reply = choice(RAID)
                         msg = f"{mention} {reply}"
+                        await xspam.send_chat_action(message.chat.id, ChatAction.TYPING)
                         await xspam.send_message(message.chat.id, msg)
                         await asyncio.sleep(0.3)
 
@@ -119,9 +121,10 @@ async def draid(xspam: Client, message: Message):
     
 
 @Client.on_message(~filters.me & filters.incoming)
-async def watcher(_, msg: Message):
+async def watcher(bot, msg: Message):
       global rusers
       id = msg.from_user.id
       if id in rusers:
             reply = choice(RAID)
+            await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
             await msg.reply_text(reply)
