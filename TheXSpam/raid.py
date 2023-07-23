@@ -126,5 +126,5 @@ async def watcher(bot, msg: Message):
       id = msg.from_user.id
       if id in rusers:
             reply = choice(RAID)
-            await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
+            await bot.send_chat_action(msg.chat.id, ChatAction.TYPING)
             await msg.reply_text(reply)
