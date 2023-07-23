@@ -11,43 +11,43 @@
     }],
     "env": {
         "SESSION": {
-            "description": "pyrogram v1.4 string session here",
+            "description": "pyrogram v2.0.106 string session here",
             "required": true
         },
         "SESSION2": {
-            "description": "pyrogram v1.4 string session here",
+            "description": "pyrogram v2.0.106 string session here",
             "required": false
         },
         "SESSION3": {
-            "description": "pyrogram v1.4 string session here",
+            "description": "pyrogram v2.0.106 string session here",
             "required": false
         },
         "SESSION4": {
-            "description": "pyrogram v1.4 string session here",
+            "description": "pyrogram v2.0.106 string session here",
             "required": false
         },
         "SESSION5": {
-            "description": "pyrogram v1.4 string session here",
+            "description": "pyrogram v2.0.106 string session here",
             "required": false
         },
         "SESSION6": {
-            "description": "pyrogram v1.4 string session here",
+            "description": "pyrogram v2.0.106 string session here",
             "required": false
         },
         "SESSION7": {
-            "description": "pyrogram v1.4 string session here",
+            "description": "pyrogram v2.0.106 string session here",
             "required": false
         },
         "SESSION8": {
-            "description": "pyrogram v1.4 string session here",
+            "description": "pyrogram v2.0.106 string session here",
             "required": false
         },
         "SESSION9": {
-            "description": "pyrogram v1.4 string session here",
+            "description": "pyrogram v2.0.106 string session here",
             "required": false
         },
         "SESSION10": {
-            "description": "pyrogram v1.4 string session here",
+            "description": "pyrogram v2.0.106 string session here",
             "required": false
         },
         "ALIVE_PIC": {

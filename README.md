@@ -22,14 +22,14 @@
 
 - `API_HASH`
 
-- `PYROGRAM SESSION (V1.4)`
+- `PYROGRAM SESSION (V2.0.106)`
 
 - `OWNER ID`
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
 
-# Pʏʀᴏɢʀᴀᴍ (V1.4) Sᴇssɪᴏɴ Sᴛʀɪɴɢ
+# Pʏʀᴏɢʀᴀᴍ (V2.0.106) Sᴇssɪᴏɴ Sᴛʀɪɴɢ
 
 - [BᴏᴛLɪɴᴋ](https://t.me/SessionStringGeneratorRobot)
 
